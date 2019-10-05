@@ -1,0 +1,13 @@
+name: test
+
+on:
+  push:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        if: github.event_name == 'push'
+        run: echo Hello, world!
