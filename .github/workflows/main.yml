@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        if: startsWith(${{ github.ref }}, 'refs/tags/')
+        if: startsWith(github.ref, 'refs/tags/')
         run: |
           echo Hello, world!
       - name: echo
