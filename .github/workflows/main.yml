@@ -15,4 +15,5 @@ jobs:
           echo ${{ github }}
           echo ${{ github.event_name }}
           echo ${{ github.event_name.push }}
+          echo ${{ github.push }}
           echo ${{ github.push.master }}
