@@ -10,4 +10,6 @@ jobs:
         if: github.event_name.push == 'push'
         run: |
           echo Hello, world!
+      - name: echo
+        run: |
           echo ${{ github.event_name }}
