@@ -7,5 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        if: github.event_name == 'push'
-        run: echo Hello, world!
+        if: github.event_name.push == 'push'
+        run: |
+          echo Hello, world!
+          echo ${{ github.event_name }}
