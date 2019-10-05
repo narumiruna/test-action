@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        if: github.ref == refs/heads/master
+        if: github.ref == 'refs/heads/master'
         run: |
           echo Hello, world!
       - name: echo
