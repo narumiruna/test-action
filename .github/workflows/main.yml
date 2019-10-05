@@ -15,5 +15,6 @@ jobs:
           echo ${{ github }}
           echo ${{ github.event_name }}
           echo ${{ github.event_name.push }}
+          echo ${{ github.ref}}
           echo ${{ github.head_ref }}
           echo ${{ github.base_ref}}
